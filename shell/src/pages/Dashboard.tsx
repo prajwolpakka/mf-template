@@ -10,8 +10,8 @@ const Dashboard = () => {
     queryClient.invalidateQueries({ queryKey: ["kms", "knowledge", "summary"] });
   };
 
-  const clearCmsCache = () => {
-    queryClient.invalidateQueries({ queryKey: ["cms", "dashboard", "summary"] });
+  const clearCrmCache = () => {
+    queryClient.invalidateQueries({ queryKey: ["crm", "dashboard", "summary"] });
   };
 
   return (
@@ -34,7 +34,7 @@ const Dashboard = () => {
 
         <div className="relative">
           <button
-            onClick={clearCmsCache}
+            onClick={clearCrmCache}
             className={`rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ${"bg-green-500 hover:bg-green-600 focus:ring-green-500"}`}
           >
             Clear CMS Cache

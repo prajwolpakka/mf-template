@@ -1,11 +1,11 @@
 import type { AuthState } from "shared/store";
 import { useSelector } from "react-redux";
 
-import { useCmsDashboardSummaryQuery } from "@/services/hooks";
+import { useCrmDashboardSummaryQuery } from "@/services/hooks";
 
 const Dashboard = () => {
   const authState = useSelector((state: { auth: AuthState }) => state.auth);
-  const { data, isLoading, isFetching } = useCmsDashboardSummaryQuery();
+  const { data, isLoading, isFetching } = useCrmDashboardSummaryQuery();
 
   return (
     <div className="space-y-6">

@@ -33,7 +33,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       federation({
-        name: "cms",
+        name: "crm",
         filename: "remoteEntry.js",
         remotes: {
           shared: sharedRemote,

@@ -40,7 +40,7 @@ export default defineConfig(({ mode }) => {
           "./hooks": "./src/hooks/store.ts",
         },
         remotes: {
-          cms_app: remoteEntry("VITE_CMS_REMOTE_URL", "http://localhost:3001/remoteEntry.js"),
+          crm_app: remoteEntry("VITE_CMS_REMOTE_URL", "http://localhost:3001/remoteEntry.js"),
           kms_app: remoteEntry("VITE_KMS_REMOTE_URL", "http://localhost:3002/remoteEntry.js"),
           shared: remoteEntry("VITE_COMMON_REMOTE_URL", "http://localhost:3003/remoteEntry.js"),
         },

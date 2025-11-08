@@ -1,6 +1,6 @@
-import cmsApiClient from "@/config/axios";
+import crmApiClient from "@/config/axios";
 
-export type CmsDashboardSummary = {
+export type CrmDashboardSummary = {
   totalArticles: number;
   drafts: number;
   scheduled: number;
@@ -11,7 +11,7 @@ export type CmsDashboardSummary = {
   };
 };
 
-export const MOCK_CMS_DASHBOARD_SUMMARY: CmsDashboardSummary = {
+export const MOCK_CMS_DASHBOARD_SUMMARY: CrmDashboardSummary = {
   totalArticles: 128,
   drafts: 12,
   scheduled: 5,
@@ -24,7 +24,7 @@ export const MOCK_CMS_DASHBOARD_SUMMARY: CmsDashboardSummary = {
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export const fetchCmsDashboardSummary = async (): Promise<CmsDashboardSummary> => {
+export const fetchCrmDashboardSummary = async (): Promise<CrmDashboardSummary> => {
   const shouldUseMock = true;
 
   if (shouldUseMock) {
@@ -32,6 +32,6 @@ export const fetchCmsDashboardSummary = async (): Promise<CmsDashboardSummary> =
     return MOCK_CMS_DASHBOARD_SUMMARY;
   }
 
-  const { data } = await cmsApiClient.get<CmsDashboardSummary>("/dashboard/summary");
+  const { data } = await crmApiClient.get<CrmDashboardSummary>("/dashboard/summary");
   return data;
 };

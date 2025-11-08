@@ -1,4 +1,4 @@
-declare module "cms/App" {
+declare module "crm/App" {
   const App: import("react").ComponentType;
   export default App;
 }

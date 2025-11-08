@@ -26,11 +26,11 @@ const NAV_ITEMS: NavItem[] = [
   },
   {
     title: "CMS",
-    url: "/cms",
+    url: "/crm",
     icon: Briefcase,
     items: [
-      { title: "Dashboard", url: "/cms/dashboard" },
-      { title: "Test Page", url: "/cms/test" },
+      { title: "Dashboard", url: "/crm/dashboard" },
+      { title: "Test Page", url: "/crm/test" },
     ],
   },
   {

@@ -7,11 +7,11 @@ import { logout, selectAuth } from "shared/store";
 // @ts-ignore -- Remote module is provided by Module Federation at runtime.
 const AppLayout = lazy(() => import("shared/app-layout").then((m) => ({ default: m.default })));
 
-const CmsLayout = () => {
+const CrmLayout = () => {
   const location = useLocation();
   const dispatch = useDispatch();
   const { user } = useSelector(selectAuth);
-  const basePath = location.pathname.startsWith("/cms") ? "/cms" : "";
+  const basePath = location.pathname.startsWith("/crm") ? "/crm" : "";
   const currentPath =
     location.pathname.endsWith("/") && location.pathname.length > 1
       ? location.pathname.slice(0, -1)
@@ -68,7 +68,7 @@ const CmsLayout = () => {
   const sidebarUser = useMemo(
     () => ({
       name: user?.name ?? "CMS Manager",
-      email: user?.email ?? "cms.team@example.com",
+      email: user?.email ?? "crm.team@example.com",
       avatar: "/avatars/shadcn.jpg",
     }),
     [user]
@@ -102,4 +102,4 @@ const CmsLayout = () => {
   );
 };
 
-export default CmsLayout;
+export default CrmLayout;

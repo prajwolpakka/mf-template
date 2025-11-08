@@ -10,7 +10,7 @@ const TestPage = () => {
             <strong>Module:</strong> Content Management System
           </li>
           <li>
-            <strong>Route:</strong> /cms/test
+            <strong>Route:</strong> /crm/test
           </li>
           <li>
             <strong>Status:</strong> Active

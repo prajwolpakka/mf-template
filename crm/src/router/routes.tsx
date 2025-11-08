@@ -3,11 +3,11 @@ import TestPage from "../pages/test";
 
 export const routes = [
   {
-    path: "cms/dashboard",
+    path: "crm/dashboard",
     element: <Dashboard />,
   },
   {
-    path: "cms/test",
+    path: "crm/test",
     element: <TestPage />,
   },
 ];
