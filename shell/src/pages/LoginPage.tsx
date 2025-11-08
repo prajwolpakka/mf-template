@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { loginSuccess, selectAuth } from "../store/actions";
-import { useAppDispatch, useAppSelector } from "../hooks/store";
+import { useAppDispatch, useAppSelector } from "../store/store";
 
 const LoginPage = () => {
   const dispatch = useAppDispatch();

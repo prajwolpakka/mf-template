@@ -1,7 +1,7 @@
 import { Briefcase, LayoutDashboard, Library, LucideIcon, Workflow } from "lucide-react";
 import { Suspense, lazy, useMemo } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../hooks/store";
+import { useAppDispatch, useAppSelector } from "../store/store";
 import { logout as logoutAction, selectAuth } from "../store/actions";
 
 // @ts-ignore Remote module is provided by Module Federation at runtime.
